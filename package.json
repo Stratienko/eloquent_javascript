@@ -1,0 +1,21 @@
+{
+  "name": "eloquent_javascript",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Stratienko/eloquent_javascript.git",
+  "author": "Stratienko <artemstratienko94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.1.2",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.5"
+  }
+}
