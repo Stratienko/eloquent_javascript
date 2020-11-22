@@ -1,11 +1,13 @@
-import * as programStructure from "./program-structure";
-import * as functions from "./functions";
-import * as dataStructures from "./data-structures";
+import * as programStructure from './program-structure';
+import * as functions from './functions';
+import * as dataStructures from './data-structures';
+import * as highOrderFunctions from './high-order-functions';
+import {resources} from './resources/index';
 
 // Program structure
 
 // programStructure.buildHashtagTriangle(15);
-programStructure.fizzBuzz();
+// programStructure.fizzBuzz();
 // programStructure.drawChessBoard(8);
 
 // Functions
@@ -39,4 +41,47 @@ programStructure.fizzBuzz();
 // console.log(nth(arrayToList([1, 2, 3]), 0));
 // console.log(deepEqual({ a: { b: 1, c: 1 } }, { a: { b: 1, c: 1 } }));
 
-export { programStructure, functions, dataStructures };
+// High order functions
+
+// const {
+//   characterCount,
+//   average,
+//   characterScript,
+//   detectTextScripts,
+//   flat,
+//   loop,
+//   every,
+//   detectTextDirection,
+// } = highOrderFunctions;
+
+// console.log(resources.scripts.reduce((acc, curr) =>
+//   characterCount( acc ) > characterCount( curr ) ?
+//   acc :
+//   curr,
+// ));
+// console.log(
+//     Math.round(
+//         average(
+//             resources.scripts
+//                 .filter((script) => script.living)
+//                 .map((script) => script.year))));
+// console.log(
+//     Math.round(
+//         average(
+//             resources.scripts
+//                 .filter((script) => !script.living)
+//                 .map((script) => script.year))));
+// console.log(characterScript(112));
+// console.log(detectTextScripts('Aenean sagittis? Привет, мир! How are you?'));
+// console.log(flat([[1, 2], [3, 4]]));
+// loop(-5, (i) => i <= 5, (i) => i + 1, console.log);
+// console.log(every<number>([1, 2, 3, 4], (el) => el > 0));
+// console.log(detectTextDirection('Aenean sagittis? Привет, мир! How are you?'));
+
+export {
+  programStructure,
+  functions,
+  dataStructures,
+  highOrderFunctions,
+  resources,
+};

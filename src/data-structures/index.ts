@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param {number}start from
  * @param {number}end to
  * @return {number[]} array of numbers
@@ -15,7 +15,7 @@ export function range(start: number, end: number): number[] {
 }
 
 /**
- * 
+ *
  * @param {number[]}args numbers to sum
  * @return {number} sum of numbers
  */
@@ -30,7 +30,7 @@ export function sum(...args: number[]): number {
 }
 
 /**
- * 
+ *
  * @param {any[]}source array to reverse
  * @return {any[]} reversed array
  */
@@ -64,7 +64,7 @@ export type List = {
 };
 
 /**
- * 
+ *
  * @param {any[]}array values array
  * @return {List} listed values
  */
@@ -78,11 +78,11 @@ export function arrayToList(array: any[] = []): List {
     };
   }
 
-  return list || { value: undefined, rest: list };
+  return list || {value: undefined, rest: list};
 }
 
 /**
- * 
+ *
  * @param {List}list source list
  * @return {any[]} list values array
  */
@@ -104,10 +104,10 @@ export function listToArray(list: List): any[] {
 }
 
 /**
- * 
+ *
  * @param {any}value value to add to the list
  * @param {List | null}rest target list
- * @return {List} updated list 
+ * @return {List} updated list
  */
 export function prepend(value: any, rest: List | null): List {
   return {
@@ -118,7 +118,7 @@ export function prepend(value: any, rest: List | null): List {
 
 /**
  * Returns the list value by its index
- * @param {List | null}list source 
+ * @param {List | null}list source
  * @param {number}index value index
  * @return {any}
  */
@@ -132,8 +132,8 @@ export function nth(list: List | null, index: number): any {
 
 /**
  * Recursively checks the equality of objects
- * @param {any}source 
- * @param {any}target 
+ * @param {any}source
+ * @param {any}target
  * @return {boolean}
  */
 export function deepEqual(source: any, target: any): boolean {
@@ -141,7 +141,7 @@ export function deepEqual(source: any, target: any): boolean {
 
   if (typeof source !== typeof target) return false;
 
-  if (typeof source === "object" && source !== null && target !== null) {
+  if (typeof source === 'object' && source !== null && target !== null) {
     if (Object.keys(source).length !== Object.keys(target).length) {
       return false;
     }
