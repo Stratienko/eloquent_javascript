@@ -4,8 +4,8 @@ import * as dataStructures from "./data-structures";
 
 // Program structure
 
-// programStructure.buildHashtagTriangle();
-// programStructure.fizzBuzz();
+// programStructure.buildHashtagTriangle(15);
+programStructure.fizzBuzz();
 // programStructure.drawChessBoard(8);
 
 // Functions
